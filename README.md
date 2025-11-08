@@ -1,5 +1,7 @@
 ## Minimal repo displaying a bug in the `turbo prune` command
 
+Made for this issue: https://github.com/vercel/turborepo/issues/11074. Check the issue for more details.
+
 ### Steps to reproduce:
 
 If you have already have `turbo@2.6.1-canary.1` installed, then just run
@@ -9,10 +11,10 @@ turbo prune app-a
 
 Compare the output of `out/bun.lock` and `bun.lock`. The `@hatchet-dev/typescript-sdk/zod` is missing from the pruned Lockfile.
 
+
 ----
 FROM THE TURBO REPO STARTER:
 ----
-
 
 # Turborepo starter with shell commands
 
